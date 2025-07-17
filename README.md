@@ -31,8 +31,8 @@ $$
 #### Algorithm Highlights
 
 - **Discretization:** Finite volume method (staggered grid).
-- **Velocity prediction:** Solves momentum equations for intermediate velocities $ \( \mathbf{u}^*, \mathbf{v}^* \)$.
-- **Pressure correction:** Solves the Poisson equation \( \nabla^2 p' = \nabla \cdot \mathbf{u}^* \) for pressure update $\( p = p^* + \alpha_p p' \)$.
+- **Velocity prediction:** Solves momentum equations for intermediate velocities $  \mathbf{u}^*, \mathbf{v}^* $.
+- **Pressure correction:** Solves the Poisson equation $ \nabla^2 p' = \nabla \cdot \mathbf{u}^* $ for pressure update $ p = p^* + \alpha_p p' $.
 - **Quantum patch:** A central 3×3 subdomain of the Poisson equation is solved via `quantum_poisson_solver()` (VQE-compatible placeholder).
 - **Boundary conditions:** Lid-driven cavity flow (top wall moving, others stationary).
 
